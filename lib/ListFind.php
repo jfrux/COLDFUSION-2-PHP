@@ -1,7 +1,7 @@
 <?php
 function ListFind($list,$value,$delimiter=",")
 {
-	$delimiter = substr($delimiter,1);
+	$delimiter = substr($delimiter,0);
 	$a = explode($delimiter,$list);
 	
 	for($i=0;$i<count($a);$i++)
